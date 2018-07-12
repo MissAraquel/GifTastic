@@ -30,4 +30,17 @@ $(document).ready(function(){
 
     renderButtons();
 
+    $("#addDog").on('click', function (){
+
+        event.preventDefault();
+
+        var dog = $("#inputDog").val().trim();
+
+        dogBreeds.push(dog);
+
+        renderButtons();
+
+    });
+
+    
 });
