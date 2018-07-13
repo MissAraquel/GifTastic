@@ -88,14 +88,14 @@ $(document).ready(function(){
             });
     });
 
-    $(document).on('click', 'showImage', function () {
+    $(document).on('click', '.showImage', function () {
 
         var state = $(this).data('state');
 
         if (state == "still") {
             console.log("still image works");
 
-            $(this).attre('src', $(this).data('animate'))
+            $(this).attr('src', $(this).data('animate'))
                 .data('state', 'animate');
 
         } else {
